@@ -1,10 +1,8 @@
 # Saturn
 
+![](media/badges/python.svg)![](media/badges/discord.svg)![](media/badges/license.svg)
 
-
-![](media/saturn.png)
-
-
+![](media/saturn.png)  
 
 A simple and cute discord bot.
 
