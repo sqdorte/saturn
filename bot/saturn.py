@@ -10,15 +10,16 @@ import os
 if not 'TOKEN' in os.environ:
   print('Token not found, exiting...')
   raise SystemExit
+  
+if not 'LOG' in os.environ:
+  print('Log channel id missing, exiting...')
+  raise SystemExit
 
 token = os.environ.get('TOKEN')
+log = os.environ.get('LOG')
 
 invite_pattern = re.compile(r'(?:discord\.gg/|discordapp\.com/invite/)([^\s|^\W+$]+)')
 last = None
-
-with open('config.json', 'r') as raw:
-  config = json.loads(raw.read())
-  log = config['log']
 
 client = discord.Client()
 

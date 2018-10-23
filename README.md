@@ -15,6 +15,6 @@ A simple and cute discord bot.
 $ git clone https://github.com/sqdorte/saturn.git
 $ cd saturn/bot/
 $ export TOKEN="YOUR_TOKEN"
-$ echo '{"log": "LOG_CHANNEL_ID"}' > config.json
+$ export LOG="LOG_CHANNEL_ID"
 $ python bot.py
 ```
