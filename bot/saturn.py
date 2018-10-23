@@ -5,13 +5,19 @@ import discord
 import re
 import json
 import asyncio
+import os
+
+if not 'TOKEN' in os.environ:
+  print('Token not found, exiting...')
+  raise SystemExit
+
+token = os.environ.get('TOKEN')
 
 invite_pattern = re.compile(r'(?:discord\.gg/|discordapp\.com/invite/)([^\s|^\W+$]+)')
 last = None
 
 with open('config.json', 'r') as raw:
   config = json.loads(raw.read())
-  token = config['token']
   log = config['log']
 
 client = discord.Client()
