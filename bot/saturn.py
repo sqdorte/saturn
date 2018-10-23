@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 import discord
@@ -10,8 +10,9 @@ invite_pattern = re.compile(r'(?:discord\.gg/|discordapp\.com/invite/)([^\s|^\W+
 last = None
 
 with open('config.json', 'r') as raw:
-  config = json.loads(raw.read)
+  config = json.loads(raw.read())
   token = config['token']
+  log = config['log']
 
 client = discord.Client()
 
@@ -52,7 +53,7 @@ async def on_member_join(member):
       value = ''.join(invite_pattern.findall(member.name))
     )
 
-    await client.send_message(last.channel, embed=em)
+    await client.send_message(client.get_channel(log), embed=em)
 
     last = None
 
