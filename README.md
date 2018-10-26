@@ -1,8 +1,8 @@
 # Saturn
 
-[![](media/badges/python.svg)](https://www.python.org/)
-[![](media/badges/discord.svg)](https://github.com/Rapptz/discord.py)
-[![](media/badges/license.svg)](https://github.com/sqdorte/saturn/blob/master/LICENSE)
+[![Python](https://img.shields.io/badge/python-3.6-007EC6.svg)](https://www.python.org/)
+[![Discord.py](https://img.shields.io/badge/discord.py-0.16.12-007EC6.svg)](https://github.com/Rapptz/discord.py)
+[![MIT](https://img.shields.io/badge/mit-license-800080.svg)](https://github.com/sqdorte/saturn/blob/master/LICENSE)
 <br>
 
 ![](media/saturn.png)   
