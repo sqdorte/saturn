@@ -34,7 +34,7 @@ async def on_message(e):
     return
 
   if client.user.id in [x.id for x in e.mentions]:
-    client.send_file(e.channel, '../media/sanic.png')
+    await client.send_file(e.channel, '../media/sanic.png')
 
   if e.type == 7:
     last = e
