@@ -33,6 +33,9 @@ async def on_message(e):
   if e.author.id == client.user.id:
     return
 
+  if client.get_member(client.user.id) in e.mentions:
+    client.send_file(e.channel, '../media/sanic.png')
+
   if e.type == 7:
     last = e
 
